@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>toDoList</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">To Do List</h1>
+        <form class="user-input">
+          <input
+            type="text"
+            class="text"
+            placeholder="ex: Go to the grocery store"
+          />
+          <button type="submit" class="submit">Add</button>
+        </form>
+      </header>
+      <ul class="items">
+        <template>
+          <li onclick="del($(this))" class="todo-item"></li>
+        </template>
+      </ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  overflow-x: hidden;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  margin: 0 auto;
+  max-width: 50vw;
+}
+header {
+  background-color: rgb(235, 255, 226);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 24vh;
+  margin-top: 20vh;
+}
+.user-input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 6vh 6vw;
+}
+.title {
+  transform: translateY(30%);
+  color: rgb(72, 144, 228);
+  text-shadow: 2px 2px 2px rgb(196, 185, 255);
+}
+.text {
+  font-size: 15px;
+  width: 100%;
+  margin-left: 3vw;
+  background: none;
+  border: none;
+  border: 2px solid rgb(72, 144, 228);
+  background-color: rgb(224, 219, 255);
+  padding: 9px;
+}
+.text::placeholder {
+  color: rgb(70, 122, 131);
+}
+.text:focus {
+  outline: none;
+}
+.submit {
+  font-size: 15px;
+  width: 11vw;
+  margin-right: 3vw;
+  background: none;
+  border: none;
+  background-color: rgb(72, 144, 228);
+  color: white;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: rgb(38, 112, 197);
+}
+.submit:focus {
+  outline: none;
+}
+.items {
+  width: 100%;
+  background-color: rgb(233, 233, 233);
+}
+.todo-item {
+  position: relative;
+  color: rgb(38, 112, 197);
+  text-shadow: 2px 2px 2px rgb(196, 185, 255);
+  padding: 2vh 1vw;
+  font-size: 24px;
+  cursor: pointer;
+}
+.todo-item:hover {
+  background-color: rgb(199, 199, 199);
+}
+.close {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  text-shadow: none;
+  color: black;
+  color: rgb(102, 102, 102);
+  right: 0%;
+  top: 0%;
+  height: 100%;
+  font-size: 17px;
+  padding: 0vh 2vw;
+}
+.close:hover {
+  color: rgb(226, 226, 226);
+  background-color: rgb(253, 61, 61);
+}
+.items-left {
+  font-size: 18px;
+  margin: 2vh 1vw;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 90vw;
+  }
+  .submit {
+    width: 30vw;
+  }
+  .close {
+    padding: 0vh 4vw;
+  }
+  .todo-item {
+    padding: 1vh 1vw;
+  }
+}
